@@ -62,10 +62,10 @@ $useDatabase = true;                     // Choose between using a database or d
 /* this data is necessary if a database is used */
 $cfgServerHost = 'localhost';             // MySQL hostname
 $cfgServerPort = '';                      // MySQL port - leave blank for default port
-$cfgServerUser = 'root';                  // MySQL user
-$cfgServerPassword = '';                  // MySQL password
+$cfgServerUser = 'nalvarez_uweb';                  // MySQL user
+$cfgServerPassword = '^YTJ,jB3*Rk{';                  // MySQL password
 
-$cfgDbDatabase = 'local_211bd';        // MySQL database name containing phpSecurePages table
+$cfgDbDatabase = 'nalvarez_web';        // MySQL database name containing phpSecurePages table
 $cfgDbTableUsers = 'usuarios';         // MySQL table name containing phpSecurePages user fields
 $cfgDbLoginfield = 'user';                // MySQL field name containing login word
 $cfgDbPasswordfield = 'password';         // MySQL field name containing password

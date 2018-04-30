@@ -12,7 +12,23 @@ and open the template in the editor.
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script>
         $(document).ready(function(){
-            var sorteado = ["Juanito", "Pepito", "Luchito", "Jorgito", "Claudito"]
+            //var sorteado = ["Juanito",
+            // "Pepito",
+            //  "Luchito",
+            //   "Jorgito",
+            //    "Claudito"];
+            var sorteado = [
+                <?php $db = new ezSQL_mysql("sasasasa");
+                        $ganadores = $db->get_results("select * from ganadores");
+                        $i=1;
+                        foreach ($ganadores as $premiado){
+                           echo "\"".$premiado->NombreGanador."\"";
+                           if($i<5){
+                           echo ",";
+                           }
+                            $i++;
+                            } ?>
+           "" ];
         $("#Participante1N").html("1");
         $("#Participante2N").html("2");
         $("#Participante3N").html("3");
