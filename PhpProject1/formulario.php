@@ -6,11 +6,11 @@ include("./mysql/ez_sql_mysql.php");
 <div class="container">
     <div class="row">
         <div class="col">
-            <form action="insertar.php" method="GET">
-                <input type="text" id="Nombre">
-                <input type="text" id="Apellido">
-                <input type="text" id="Correo">
-                <input type="submit" value="Enviar Datos">
+            <form name="form1" id="form1" action="insertar.php" method="GET">
+                <input type="text" id="Nombre" name="Nombre">
+                <input type="text" id="Apellido" name="Apellido">
+                <input type="text" id="Correo" name="Correo">
+                <button id="enviarDatos" class="btn btn-success">Enviar</button>
             </form>
         </div>
     </div>
