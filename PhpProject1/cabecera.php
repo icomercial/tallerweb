@@ -26,6 +26,13 @@
                             alert("DATOS INSERTADOS");
                         })
             });
+         $(".modificar").click(function(e){
+             e.preventDefault();
+             var idc =$(this).attr("id");
+             var otro = $("#n_"+idc).attr("otrop");
+             //alert(otro);
+             $("#n_"+idc).html("<input type=\"text\" id=\"v_"+idc+"\" value=\""+otro+"\">");
+         });
         });    
         </script>
     </head>
