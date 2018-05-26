@@ -37,7 +37,6 @@ $noDetailedMessages = false;
 
 /****** Password Encryption ******/
 $passwordEncryptedWithMD5 = true;          // Set this to true if the passwords are encrypted with the MD5 algorithm
-
 /****** Choose Language ******/
 $languageFile = 'lng_english.php';        // Choose from one of the 40 language files in the /lng directory
 
@@ -62,11 +61,11 @@ $useDatabase = true;                     // Choose between using a database or d
 /* this data is necessary if a database is used */
 $cfgServerHost = 'localhost';             // MySQL hostname
 $cfgServerPort = '';                      // MySQL port - leave blank for default port
-$cfgServerUser = 'nalvarez_uweb';                  // MySQL user
-$cfgServerPassword = '^YTJ,jB3*Rk{';                  // MySQL password
+$cfgServerUser = 'root';                  // MySQL user
+$cfgServerPassword = '';                  // MySQL password
 
-$cfgDbDatabase = 'nalvarez_web';        // MySQL database name containing phpSecurePages table
-$cfgDbTableUsers = 'usuarios';         // MySQL table name containing phpSecurePages user fields
+$cfgDbDatabase = 'dai5501_vespertino';        // MySQL database name containing phpSecurePages table
+$cfgDbTableUsers = 'phpsp_users';         // MySQL table name containing phpSecurePages user fields
 $cfgDbLoginfield = 'user';                // MySQL field name containing login word
 $cfgDbPasswordfield = 'password';         // MySQL field name containing password
 $cfgDbUserLevelfield = 'userlevel';       // MySQL field name containing user level
